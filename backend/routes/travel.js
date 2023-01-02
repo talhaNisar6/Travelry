@@ -10,6 +10,7 @@ const { clickedTravel
     clickedUploads,
     clickedSignIn,
     clickedRegister,
+    addUser,
 } = require('../controllers/travel');
 
 
@@ -21,6 +22,8 @@ router.route('/todo').get(clickedToDos)
 router.route('/uploads').get(clickedUploads)
 router.route('/signin').get(clickedSignIn)
 router.route('/register').get(clickedRegister);
+
+router.route('/register/signup').post(addUser);
 
 
 
