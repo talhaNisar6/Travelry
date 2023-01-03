@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 const express = require('express');
 const app = express();
@@ -7,14 +8,13 @@ const { default: mongoose } = require('mongoose');
 const notFound=require('./middleware/notFound')
 
 
-require('dotenv').config()
 
 
 
 
 mongoose.set('strictQuery',false)
 //middleware
-app.use(express.static('../frontend/build'));
+app.use(express.static('./CLIENT/build'));
 app.use(express.json());
  
 //routes
