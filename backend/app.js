@@ -14,7 +14,7 @@ require('dotenv').config()
 
 mongoose.set('strictQuery',false)
 //middleware
-app.use(express.static('../Final-Year-Project/build'));
+app.use(express.static('../frontend/build'));
 app.use(express.json());
  
 //routes
