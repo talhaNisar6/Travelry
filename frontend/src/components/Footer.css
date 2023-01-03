@@ -1,0 +1,62 @@
+.footer{
+    height: 250px;
+    width: 100%;
+    margin-top: 50px;
+    /* border: 1px solid green; */
+}
+h1{
+    text-align: center;
+}
+.list{
+    height: 50px;
+    width: 600px;
+    margin-left: 27%;
+    margin-top: 30px;
+    /* border: 1px solid red; */
+}
+.list li{
+    list-style: none;
+}
+.list ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* icons styling */
+.icons{
+    height: 50px;
+    width: 190px;
+    margin-left: 43%;
+    /* border: 1px solid blue; */
+}
+.icons li{
+    list-style: none;
+}
+.icons ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.icons ul li img{
+    height: 32px;
+    width: 30px;
+}
+.copyright{
+    position: relative;
+    top: 30px;
+    right: 450px;
+}
+.termsOfUse{
+    position: relative;
+    top: 10px;
+    left: 320px;
+}
+.privacyPolicy {
+    position: relative;
+    top: -9px;
+    left: 450px;
+}
+.terms a{
+  text-decoration: none;
+}
