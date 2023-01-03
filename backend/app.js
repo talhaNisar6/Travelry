@@ -14,13 +14,12 @@ require('dotenv').config()
 
 mongoose.set('strictQuery',false)
 //middleware
-app.use(express.static('./public'))
+app.use(express.static('../Final-Year-Project/build'));
 app.use(express.json());
-app.use(notFound)
  
 //routes
-app.get('/',(req,res)=>{
-res.send('Task Manager App')
+app.get('/travelry',(req,res)=>{
+res.send('Travelry App')
 })
 
 app.use('/travelry',getTravel)
@@ -36,5 +35,7 @@ const start = async()=>{
         console.log(error);
     }
 }
+app.use(notFound)
+
 start()
 
